@@ -40,7 +40,7 @@
     "lint:cmd": "eslint . --ext '.js,.json,.snap' --cache",
     "prebuild": "npm run clean",
     "precommit": "flow check && lint-staged",
-    "prepublishOnly": "npm run build",
+    "prepublish": "npm run build",
     "test": "jest",
     "test:ci": "jest --ci",
     "test:coverage": "npm run test -- --coverage && cat ./coverage/lcov.info | coveralls",
